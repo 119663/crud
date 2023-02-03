@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Register from './Register/Register';
-// import Login from './Login/Login';
+import Login from './Login/Login'
 
 function Home() {
   return (
@@ -34,7 +34,7 @@ function Registration() {
 function LogIn() {
   return (
     <View style={styles.button}>
-      <Login/>
+      component={Login}
     </View>
   );
 }
